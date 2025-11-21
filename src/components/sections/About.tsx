@@ -66,30 +66,41 @@ const MoreAboutMe = () => {
 
 const VideoReel = () => {
     return (
-        // video reel row container
-        <div className="w-full flex items-start gap-6 md:gap-24 md:mx-[135px] mx-[38px] md:pt-[110px] md:pb-[100px]">
-            {/* video cover + play button positioning container */}
-            <div className="flex flex-col justify-start items-center relative">
-                <img src={VideoCover} alt="video reel cover" className="md:w-[1680px] md:h-[368px] w-[200px] h-[100px] object-cover md:rounded-md rounded-md" />
+        <div className="w-full flex flex-row items-start gap-4 md:gap-24 mx-[38px] md:mx-[135px] md:pt-[110px] md:pb-[100px]">
+
+            {/* left: video */}
+            <div className="flex flex-col items-center relative shrink-0 basis-[40%]">
+                <img
+                    src={VideoCover}
+                    alt="video reel cover"
+                    className="w-full max-w-[300px] md:max-w-[680px] h-auto object-cover rounded-md"
+                />
+
                 <img
                     src={PlayButton}
                     alt="play button"
-                    className="max-w-[300px] md:w-[148px] md:h-[148px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer"
+                    className="w-[60px] h-[60px] md:w-[148px] md:h-[148px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                 />
             </div>
 
-            {/* right content column container */}
-            <div className="w-full flex flex-col justify-center items-start gap-4 md:pt-18">
+            {/* right: text */}
+            <div className="flex flex-col justify-center items-start gap-4 flex-1 md:pt-26">
+                <h2 className="font-['Epilogue'] font-normal text-[12px] md:text-[16px] tracking-[3px] uppercase text-[#EF6D58]">
+                    video reel
+                </h2>
 
-                <h2 className="font-['Epilogue'] font-normal text-[12px] md:text-[16px] leading-8 tracking-[3px] uppercase h-8 text-[#EF6D58]">video reel</h2>
-                <h3 className="font-['Epilogue'] font-extrabold text-[20px] md:text-[40px] md:leading-12 tracking-[-0px] md:w-[469px]">Unlock The Greatest <br />Value Possible</h3>
-                <p className="font-['Epilogue'] font-normal text-[12px] md:text-[16px] leading-8 -tracking-[0px] md:w-[470px] h-[70px]">
+                <h3 className="font-['Epilogue'] font-extrabold text-[18px] md:text-[40px] md:leading-12">
+                    Unlock The Greatest <br />Value Possible
+                </h3>
+
+                <p className="font-['Epilogue'] font-normal text-[12px] md:text-[16px] w-[300px] md:leading-8 md:w-1/2">
                     Design, business understanding, ability to put themselves in the merchant's shoes meant to partner.
                 </p>
             </div>
         </div>
     );
 };
+
 
 const About = () => {
     return (

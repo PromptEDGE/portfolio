@@ -5,30 +5,52 @@ import Shape from '../../assets/features/shape.svg';
 
 const NewLook = () => {
     return (
-        <div className="w-full flex flex-row justify-between gap-2 md:gap-12 mx-[38px] md:mx-[135px] my-1">
+        <div className="w-full flex justify-center">
+            <div className="w-full max-w-[1440px] flex flex-row items-start gap-6 md:gap-12 mx-[38px] md:mx-[135px] my-1">
 
-            <div className="flex flex-col items-start gap-4 pt-[105px] w-full">
-                <h2 className="font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[3px] uppercase lg:w-[93px] h-8 text-[#EF6D58]">features</h2>
-                <h3 className="font-['Epilogue'] font-extrabold lg:text-[56px] text-[40px] text-[#391400] leading-16 tracking-[-1px] w-[397px] h-[198px] lg:mb-[-50px] mb-[-60px]">Give Your Site <br />A New Look</h3>
-                <p className="font-['Epilogue'] font-normal text-[20px] text-[#391400] leading-8 -tracking-[0px] w-[470px] h-[72px]">
-                   Service range including technical skills, design, business understanding.
-                </p>
+                {/* left: text */}
+                <div className="flex flex-col items-start gap-4 pt-[105px] flex-1">
+                    <h2 className="font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[3px] uppercase text-[#EF6D58]">
+                        features
+                    </h2>
 
-                <div className="flex flex-row justify-start items-start gap-2 w-full">
-                    <img src={Check} alt="check icon" className="lg:w-8 lg:h-8 w-5 h-5 " />
-                    <p className="w-[245px] lg:h-8 font-['Epilogue'] font-normal text-[16px] text-[#391400A3] leading-8 tracking-[0px] mt-[-7px] lg:mt-0">Range including technical skills</p>
+                    <h3 className="font-['Epilogue'] font-extrabold text-[40px] lg:text-[56px] text-[#391400] leading-16 tracking-[-1px]">
+                        Give Your Site <br />A New Look
+                    </h3>
+
+                    <p className="font-['Epilogue'] font-normal text-[20px] text-[#391400] leading-8 w-[470px]">
+                        Service range including technical skills, design, business understanding.
+                    </p>
+
+                    <div className="flex flex-row gap-2 w-full">
+                        <img src={Check} alt="check icon" className="w-5 h-5 lg:w-8 lg:h-8" />
+                        <p className="font-['Epilogue'] text-[16px] text-[#391400A3] leading-8">
+                            Range including technical skills
+                        </p>
+                    </div>
+
+                    <div className="flex flex-row gap-2 w-full">
+                        <img src={Check} alt="check icon" className="w-5 h-5 lg:w-8 lg:h-8" />
+                        <p className="font-['Epilogue'] text-[16px] text-[#391400A3] leading-8">
+                            Business understanding
+                        </p>
+                    </div>
+
+                    <div className="flex flex-row gap-2 w-full">
+                        <img src={Check} alt="check icon" className="w-5 h-5 lg:w-8 lg:h-8" />
+                        <p className="font-['Epilogue'] text-[16px] text-[#391400A3] leading-8">
+                            Partner on the long run
+                        </p>
+                    </div>
                 </div>
-                <div className="flex flex-row justify-start gap-2 w-full">
-                    <img src={Check} alt="check icon" className="w-5 h-5 lg:w-8 lg:h-8" />
-                    <p className="w-[190px] h-8 font-normal text-[16px] text-[#391400A3] leading-8 tracking-[0px] mt-[-7px] md:mt-0">Business understanding</p>
-                </div>
-                <div className="flex flex-row justify-start gap-2 w-full">
-                    <img src={Check} alt="check icon" className="md:w-8 md:h-8 h-5 w-5" />
-                    <p className="w-[182px] h-8 font-normal text-[16px] text-[#391400A3] leading-8 tracking-[0px] mt-[-7px] md:mt-0">Partner on the long run</p>
-                </div>
+
+                {/* right: image */}
+                <img
+                    src={FeaturePic}
+                    alt="Feature Photo"
+                    className="md:w-[528.7px] md:h-[550.27px] w-[200px] h-[200px] mt-[70px] md:mt-[105px]"
+                />
             </div>
-
-            <img src={FeaturePic} alt="Feature Photo" className="md:w-[528.7px] md:h-[550.27px] w-[200px] h-[200px] mt-[70px] md:mt-0" />
         </div>
     );
 };
