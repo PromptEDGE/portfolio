@@ -41,7 +41,7 @@ const plans: Plans[] = [
 
 const PricingDataBlock = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center gap-24 bg-white py-12 px-4 md:px-12">
+    <section className="w-full flex flex-col items-center justify-center gap-16 md:gap-24 bg-white py-16 md:py-20 px-4 md:px-12">
       {/* Section heading */}
       <div className="text-center">
         <h5 className="font-['Epilogue'] text-[16px] tracking-[3px] uppercase text-[#EF6D58] mb-2">
@@ -53,7 +53,7 @@ const PricingDataBlock = () => {
       </div>
 
       {/* Pricing cards row container */}
-      <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-center w-full">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-center w-full mx-[38px] md:mx-0">
         {plans.map((plan) => {
           const isPopular = plan.category === "Popular";
 
@@ -61,7 +61,7 @@ const PricingDataBlock = () => {
             // individual pricing cards
             <div
               key={plan.id}
-              className={`h-[512px] border border-[#F3D1BF] rounded-md p-6 flex flex-col w-full max-w-xs 
+              className={`h-[512px] border border-[#F3D1BF] rounded-md p-6 flex flex-col w-full md:max-w-xs 
                 ${isPopular ? "w-[391px] h-[560px] pt-8 md:mt-[-45px] mx-px border-[#F3D1BF] border-r border-l rounded-tl-md rounded-tr-md rounded-br-none rounded-bl-none gap-4" : "bg-white gap-8"}
                 ${plan.id === 1 ? "md:border-r-0 rounded-tr-none rounded-br-none": plan.id === plans.length ? "md:border-l-0" : "md:border-x"}
               `}

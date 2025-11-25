@@ -124,7 +124,7 @@ const LatestWork = () => {
 const Work = () => (
   <section
     id="work"
-    className="bg-[#28293E] w-full min-h-screen py-[35px] px-[135px]"
+    className="bg-[#28293E] w-full py-16 md:py-20 px-4 md:px-8 lg:px-[135px]"
   >
     <LatestWork />
   </section>

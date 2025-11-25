@@ -60,14 +60,14 @@ const TestimonialBlockData = () => {
     const [showAll, setShowAll] = useState(false);
 
     return (
-        <section className="min-h-screen flex flex-col justify-center items-center bg-white px-6 py-12">
+        <section className="flex flex-col justify-center items-center bg-white px-6 py-16 md:py-20">
             
             {/* Desktop */}
-            <h5 className="w-[138px] h-8 font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[3px] text-center uppercase text-[#EF6D58]">
+            <h5 className="font-['Epilogue'] font-normal text-[14px] md:text-[16px] leading-8 tracking-[3px] text-center uppercase text-[#EF6D58]">
                 Testimonials
             </h5>
 
-            <h2 className="h-32 font-['Epilogue'] font-extrabold text-[56px] leading-16 tracking-[-1px] text-center text-[#391400] mb-12 w-full mt-8">
+            <h2 className="font-['Epilogue'] font-extrabold text-[32px] md:text-[56px] leading-tight md:leading-16 tracking-[-1px] text-center text-[#391400] mb-8 md:mb-12 w-full mt-6 md:mt-8">
                 What Our Clients<br /> Are Saying
             </h2>
 
@@ -125,7 +125,7 @@ const TestimonialBlockData = () => {
                     onClick={() => setShowAll((prev) => !prev)}
                     className="
                         w-[138px] h-12
-                        uppercase font-black text-[14px] text-[#391400] text-center mx-[150px] leading-[100%] tracking-[0px]
+                        uppercase font-black text-[14px] text-[#391400] text-center mx-auto leading-[100%] tracking-[0px]
                         bg-white border border-[#F3D1BF]
                         rounded-xl shadow-sm px-4 py-3 mt-2
                         active:scale-[0.97] active:bg-[#fcefe9]

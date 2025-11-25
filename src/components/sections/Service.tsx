@@ -8,7 +8,7 @@ import MarketingIcon from '../../assets/service/marketing-icon.svg';
 const OurService = () => {
     return (
         // service row container
-        <div className="flex justify-start items-center md:gap-32 mx-[38px] md:mx-[135px] my-[100px] w-full mt-[200px]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-start items-center md:gap-32 px-[38px] md:mx-[135px] my-[100px] w-full mt-[200px]">
 
             {/* service pic */}
             <div className="md:flex hidden flex-row justify-start items-center">
@@ -48,7 +48,7 @@ const OurService = () => {
 const MoreService = () => {
     return (
         // image + text row container (column on mobile)
-        <div className="flex flex-col justify-start items-center md:items-start gap-4 mx-[38px] my-[60px] md:mx-[135px] md:my-[65px]">
+        <div className="flex flex-col justify-center items-center md:items-start gap-4 px-[38px] my-[60px] md:mx-[135px] md:my-[65px]">
 
             {/* heading column container */}
             <div className="flex flex-col justify-start items-center md:items-start gap-4">
@@ -57,10 +57,10 @@ const MoreService = () => {
             </div> 
 
             {/* service cards row container (column on mobile) */}
-            <div className="flex md:flex-row flex-col justify-start items-center gap-4 md:gap-0">
+            <div className="flex md:flex-row flex-col justify-center items-center gap-4 md:gap-0">
 
                 {/* first item column container */}
-                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-md md:rounded-tr-none md:rounded-br-none md:rounded-tl-md md:rounded-bl-md w-auto md:w-[391px] h-[400px]">
+                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-md md:rounded-tr-none md:rounded-br-none w-[calc(100vw-76px)] md:w-[391px] h-[400px] px-4 md:px-0">
                     <div className="relative top-10 left-10">
                         <img src={Oval} alt="Oval Icon" className="w-20 h-20" />
                         <img src={DesignIcon} alt="Design Icon" className="absolute h-8 w-8 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
@@ -72,7 +72,7 @@ const MoreService = () => {
                 </div>
 
                 {/* second item column container */}
-                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] md:border-x-0 rounded-md md:rounded-tl-none md:rounded-tr-none md:rounded-bl-none md:rounded-br-none w-auto md:w-[391px] h-[400px]">
+                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] md:border-x-0 rounded-md md:rounded-none w-[calc(100vw-76px)] md:w-[391px] h-[400px] px-4 md:px-0">
                     {/* relative image container */}
                     <div className="relative top-10 left-10">
                         <img src={Oval} alt="Oval Icon" className="w-20 h-20" />
@@ -85,7 +85,7 @@ const MoreService = () => {
                 </div>
 
                 {/* third item column container */}
-                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-md md:rounded-tl-none md:rounded-bl-none w-auto md:w-[391px] h-[400px]">
+                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-md md:rounded-tl-none md:rounded-bl-none w-[calc(100vw-76px)] md:w-[391px] h-[400px] px-4 md:px-0">
                     {/* relative image container */}
                     <div className="relative top-10 left-10">
                         <img src={Oval} alt="Oval Icon" className="w-20 h-20" />
@@ -104,7 +104,7 @@ const MoreService = () => {
 
 const Service = () => {
 return (
-    <section id="service" className="bg-white w-full min-h-screen overflow-hidden flex flex-col">
+    <section id="service" className="bg-white w-full overflow-hidden flex flex-col py-16 md:py-20">
         <OurService />
         <MoreService />
     </section>

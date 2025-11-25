@@ -25,9 +25,9 @@ const EventsDataBlock = () => {
                         <p className="font-['Epilogue'] text-[14px] md:text-[16px] text-white">9:00 am - 3:00 pm</p>
                     </div>
 
-                    <hr className="w-full h-[1px] bg-[#3A3C56]" />
+                    <hr className="w-full h-px bg-[#3A3C56] border-0" />
 
-                    <div className="flex flex-col items-start gap-2 w-full">
+                    <div className="flex flex-col items-start gap-3 w-full">
                         <h2 className="font-['Epilogue'] font-bold text-[18px] md:text-[20px] text-white">Design Works</h2>
                         <p className="font-['Epilogue'] text-[14px] md:text-[16px] text-gray-400">
                             Digital Agency is a business you hire to outsource your digital.
@@ -49,9 +49,9 @@ const EventsDataBlock = () => {
                         <p className="font-['Epilogue'] text-[14px] md:text-[16px] text-white">1:00 pm - 8:00 pm</p>
                     </div>
 
-                    <hr className="w-full h-[1px] bg-[#3A3C56]" />
+                    <hr className="w-full h-px bg-[#3A3C56] border-0" />
 
-                    <div className="flex flex-col items-start gap-2 w-full">
+                    <div className="flex flex-col items-start gap-3 w-full">
                         <h2 className="font-['Epilogue'] font-bold text-[18px] md:text-[20px] text-white">Interior Design</h2>
                         <p className="font-['Epilogue'] text-[14px] md:text-[16px] text-gray-400">
                             Marketing efforts, instead of handling in-house.
@@ -73,9 +73,9 @@ const EventsDataBlock = () => {
                         <p className="font-['Epilogue'] text-[14px] md:text-[16px] text-white">10:00 am - 2:00 pm</p>
                     </div>
 
-                    <hr className="w-full h-[1px] bg-[#3A3C56]" />
+                    <hr className="w-full h-px bg-[#3A3C56] border-0" />
 
-                    <div className="flex flex-col items-start gap-2 w-full">
+                    <div className="flex flex-col items-start gap-3 w-full">
                         <h2 className="font-['Epilogue'] font-bold text-[18px] md:text-[20px] text-white w-full">The F design events</h2>
                         <p className="font-['Epilogue'] text-[14px] md:text-[16px] text-gray-400">
                             Provide your business with a variety of digital solutions to promote.
@@ -99,7 +99,7 @@ const EventsDataBlock = () => {
 
 const Events = () => {
     return (
-        <section id="events-section" className="min-h-screen w-full bg-[#28293E] flex flex-col items-center justify-center py-6 px-6 md:px-[60px]">
+        <section id="events-section" className="w-full bg-[#28293E] flex flex-col items-center justify-center py-16 md:py-20 px-6 md:px-12">
             <EventsDataBlock />
         </section>
     );

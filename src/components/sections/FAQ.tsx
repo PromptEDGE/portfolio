@@ -33,17 +33,13 @@ const FAQDataBlock = () => {
     }
 
     return (
-        <section className="flex flex-col md:flex-row items-center justify center md:px-[135px] py-30 md:py-12">
-            <div className="flex flex-col ml-20 md:ml-0 gap-6 md:gap-8 w-full justify-start items-start">
-                <h5 className="w-[34px] h-8 font-['Epilogue'] font-normal leading-8 tracking-[3px] uppercase text-[#EF6D58]">Faq</h5>
-
-                <h3 className="w-[371px] h-24 font-['Epilogue'] font-extrabold text-[40px] leading-12 tracking-0 text-[#391400]">Frequently Asked Questions</h3>
-
-                <p className="w-[470px] h-[67px] font-['Epilogue'] font-normal text-[16px] leading-8 tracking-0 text-[#391400]">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
-
+        <section className="flex flex-col md:flex-row items-center md:items-center justify-center px-[38px] md:px-[135px] py-16 md:py-20 gap-8 md:gap-12">
+            <div className="flex flex-col gap-6 md:gap-8 w-full md:w-auto justify-center md:justify-start items-center md:items-start">
+                <h5 className="font-['Epilogue'] font-normal leading-8 tracking-[3px] uppercase text-[#EF6D58]">Faq</h5>
+                <h3 className="max-w-full md:w-[371px] font-['Epilogue'] font-extrabold text-[28px] md:text-[40px] leading-tight md:leading-12 tracking-0 text-[#391400]">Frequently Asked Questions</h3>
+                <p className="max-w-full md:w-[470px] font-['Epilogue'] font-normal text-[14px] md:text-[16px] leading-7 md:leading-8 tracking-0 text-[#391400]">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
                 <button className="w-[110px] h-8 font-['Epilogue'] font-normal text-[16px] leading-8 tracking-0 text-[#391400] shadow-md hover:bg-gray-100 rounded-md px-2">Contact Us</button>
             </div>
-
             <div className="flex flex-col justify-center items-end gap-0 mt-5 md:pt-75 w-full md:w-auto">
                 {faqItems.map((item, index) => {
                     const isLast = index === faqItems.length - 1
@@ -53,7 +49,7 @@ const FAQDataBlock = () => {
                     return (
                         <div
                             key={item.id}
-                            className={`w-[570px] border border-solid border-[#F3D1BF] p-8 flex flex-col gap-6 ${
+                            className={`w-full md:w-[570px] border border-solid border-[#F3D1BF] p-6 md:p-8 flex flex-col gap-4 md:gap-6 ${
                                 isFirst ? 'rounded-tl-md rounded-tr-md border-b-0' : ''
                             } ${
                                 !isLast && !isFirst ? 'border-b-0' : ''
@@ -62,21 +58,21 @@ const FAQDataBlock = () => {
                             }`}
                         >
                             <div
-                                className="flex flex-row justify-between items-center gap-0 cursor-pointer"
+                                className="flex flex-row justify-between items-center gap-4 cursor-pointer"
                                 onClick={() => toggle(item.id)}
                             >
-                                <h4 className="w-[361px] h-8 font-['Epilogue'] font-bold text-[24px] leading-8 tracking-0 text-[#391400]">
+                                <h4 className="flex-1 font-['Epilogue'] font-bold text-[18px] md:text-[24px] leading-7 md:leading-8 tracking-0 text-[#391400]">
                                     {item.title}
                                 </h4>
                                 <img
                                     src={open ? Up : Down}
                                     alt="icon"
-                                    className="w-8 h-8"
+                                    className="w-6 h-6 md:w-8 md:h-8"
                                 />
                             </div>
 
                             {open && (
-                                <p className="w-[470px] h-[121px] font-['Epilogue'] font-normal text-[16px] leading-8 tracking-0 text-[#391400]">
+                                <p className="w-full md:w-[470px] font-['Epilogue'] font-normal text-[14px] md:text-[16px] leading-7 md:leading-8 tracking-0 text-[#391400]">
                                     {item.text}
                                 </p>
                             )}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from 'framer-motion';
 import TeamPhoto1 from '../../assets/our-team/team-photo-1.svg';
 import TeamPhoto2 from '../../assets/our-team/team-photo-2.svg';
 import TeamPhoto3 from '../../assets/our-team/team-photo-3.svg';
@@ -43,7 +44,7 @@ const OurTeam = () => {
   const desktopSlice = team.slice(desktopStart, desktopStart + perPage);
 
   return (
-    <section className="min-h-screen w-full bg-[#28293E] py-12 px-6 md:px-[135px] text-white">
+    <section className="w-full bg-[#28293E] py-16 md:py-20 px-6 md:px-[135px] text-white">
       {/* HEADINGS */}
       <div className="flex flex-col gap-3 mb-12 text-center md:text-left">
         <p className="text-[#EF6D58] text-[14px] tracking-[3px] uppercase">Our Team</p>
@@ -73,7 +74,14 @@ const OurTeam = () => {
         </button>
 
         {/* CARDS */}
-        <div className="grid grid-cols-4 gap-6 w-full transition-all duration-300">
+        <motion.div
+          key={desktopIndex}
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
+          className="grid grid-cols-4 gap-6 w-full"
+        >
           {desktopSlice.map((member) => (
             <div key={member.id} className="flex flex-col items-center">
               <div className="border border-[#3A3C56] rounded-md w-full h-[260px] flex items-center justify-center bg-[#1E1F2E]">
@@ -83,7 +91,7 @@ const OurTeam = () => {
               <p className="text-gray-400 text-[16px]">{member.role}</p>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
       {/* DESKTOP INDICATORS */}

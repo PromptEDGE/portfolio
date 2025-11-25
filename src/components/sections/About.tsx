@@ -7,27 +7,17 @@ import PlayButton from '../../assets/about/play-button.svg';
 
 const AboutMe = () => {
     return(
-        // photo + text about row section
-        <div className="flex flex-row items-center md:gap-0 gap-22 md:mx-[135px] md:my-[69px] mx-[38px] mt-15">
-
-            {/* image - left part */}
-            <img src={AboutPic} alt="About Photo" className="md:w-[550px] md:h-[770px] w-[220px] h-[440px] object-cover"/>
-
-            {/* right part about container */}
-            <div className="flex flex-col justify-end md:items-end items-start md:gap-4 gap-2 md:pt-[210px] w-full">
-
-                <h2 className="font-['Epilogue'] font-normal md:text-[16px] text-[12px] leading-8 tracking-[3px] uppercase w-[62px] h-8 text-[#EF6D58] mr-100">about</h2>
-
-                <h3 className="font-['Epilogue'] font-extrabold md:text-[44px] text-[24px] leading-16 tracking-[-1px] max-w-[800px] md:mr-7 w-full md:w-1/2 -mr-3">I'm Michael <span className="whitespace nowrap">Edekin</span></h3>
-
-                <h4 className="w-36 h-8 font-['Epilogue'] font-normal md:text-[20px] text-[15px] leading-8 tracking-[0px] mr-80">AI/ML Engineer</h4>
-
-                <p className="font-['Epilogue'] font-normal md:text-[18px] text-[10px] w-1/2 md:leading-8 -tracking-[0px] md:mr-7 mr-57">
+        <div className="flex flex-col md:flex-row items-center md:items-center md:gap-0 gap-6 mx-[38px] md:mx-[135px] my-12 md:my-[69px]">
+            <img src={AboutPic} alt="About Photo" className="w-full max-w-[240px] md:w-[550px] md:h-[770px] h-auto object-cover rounded-lg"/>
+            <div className="flex flex-col justify-start md:justify-end items-center md:items-end gap-3 md:gap-4 md:pt-[210px] w-full">
+                <h2 className="font-['Epilogue'] font-normal text-[14px] md:text-[16px] leading-8 tracking-[3px] uppercase text-[#EF6D58] text-center md:text-left">about</h2>
+                <h3 className="font-['Epilogue'] font-extrabold text-[24px] md:text-[44px] leading-tight md:leading-16 tracking-[-1px] max-w-full md:max-w-[800px] md:mr-7 text-center md:text-left">I'm Michael <span className="whitespace-nowrap">Edekin</span></h3>
+                <h4 className="font-['Epilogue'] font-normal text-[16px] md:text-[20px] leading-7 md:leading-8 tracking-[0px] text-center md:text-left">AI/ML Engineer</h4>
+                <p className="font-['Epilogue'] font-normal text-[14px] md:text-[18px] leading-6 md:leading-8 tracking-[0px] max-w-full md:max-w-[470px] md:mr-7 text-center md:text-left">
                     Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
                 </p>
-
-                <div className="flex justify-center bg-[#FF6A00] md:rounded-[40px] md:p-[19.5px] p-3.5 md:w-[154px] md:pb-0 pb-[18px] md:h-12 w-[100px] mt-5 md:mt-0 rounded-[20px] h-4 hover:bg-[#BE3300] mr-80">
-                        <a href="#how" className="inline-block text-[#0B1226] w-[155px] h-3.5 uppercase font-['Epilogue'] font-extrabold md:text-[14px] text-[10px] leading-[100%] tracking-[0px] whitespace-nowrap text-center mx-auto ">how we work</a>
+                <div className="flex justify-center md:justify-center bg-[#FF6A00] rounded-[40px] px-6 py-3 md:p-[19.5px] md:w-[154px] md:h-12 hover:bg-[#BE3300] mt-4 md:mt-0 md:mr-80">
+                    <a href="#how" className="inline-block text-[#0B1226] uppercase font-['Epilogue'] font-extrabold text-[12px] md:text-[14px] leading-[100%] tracking-[0px] whitespace-nowrap text-center">how we work</a>
                 </div>
             </div>
         </div>
@@ -36,29 +26,23 @@ const AboutMe = () => {
 
 const MoreAboutMe = () => {
     return (
-        // more about me table row container
-        <div className="flex  items-center gap-0 md:h-[744px] h-[480px] md:mx-[135px] mx-[38px]"> 
-
-            {/* first table item column container */}   
-            <div className="flex flex-col items-center gap-4 md:w-[800px] h-[744px] w-[180px] border border-[#1F2030] border-solid rounded-tl-md rounded-bl-md pt-[60px]">
-                <img src={AiLogo} alt="AI/ML Logo" className="md:w-[85px] md:h-[85px] w-[45px] h-[45px]" />
-                <h2 className="font-['Epilogue'] font-extrabold md:text-[36px] text-[18px] h-12 leading-12 tracking-[0px]">AI/ML Engineer</h2>
-                <h3 className="w-[198px] h-8 font-['Epilogue'] font-normal md:text-[20px] text-[14px] text-center leading-8 tracking-[0px] ">Years of experience</h3>
+        <div className="flex items-center gap-0 md:h-[744px] h-auto mx-[38px] md:mx-[135px] my-12 md:my-0"> 
+            <div className="flex flex-col items-center gap-4 md:w-[800px] h-[280px] md:h-[744px] flex-1 border border-[#1F2030] border-solid rounded-tl-md rounded-bl-md pt-[60px] pb-[60px]">
+                <img src={AiLogo} alt="AI/ML Logo" className="w-[50px] h-[50px] md:w-[85px] md:h-[85px]" />
+                <h2 className="font-['Epilogue'] font-extrabold text-[16px] md:text-[36px] leading-tight md:leading-12 tracking-[0px] text-center px-4">AI/ML Engineer</h2>
+                <h3 className="max-w-[180px] font-['Epilogue'] font-normal text-[12px] md:text-[20px] text-center leading-5 md:leading-8 tracking-[0px]">Years of experience</h3>
             </div>
-
-            {/* second table item column container */}
-            <div className="flex flex-col items-center gap-4 md:w-[800px] h-[744px] w-[180px] border border-[#1F2030] border-solid border-x-0 pt-[60px]">
-                <img src={ResearchLogo} alt="Research Logo" className="md:w-[85px] md:h-[85px] w-[45px] h-[45px]" />
-                <h2 className="font-['Epilogue'] font-extrabold md:text-[36px] text-[18px] h-8 leading-1 tracking-[0px] mt-6">Researcher</h2>
-                <h3 className="w-[170px] h-8 font-['Epilogue'] font-normal md:text-[20px] text-[14px] text-center leading-8 tracking-[0px]">Agency members</h3>
+            <div className="flex flex-col items-center gap-4 md:w-[800px] h-[280px] md:h-[744px] flex-1 border border-[#1F2030] border-solid border-x-0 pt-[60px] pb-[60px]">
+                <img src={ResearchLogo} alt="Research Logo" className="w-[50px] h-[50px] md:w-[85px] md:h-[85px]" />
+                <h2 className="font-['Epilogue'] font-extrabold text-[16px] md:text-[36px] leading-tight md:leading-1 tracking-[0px] mt-0 md:mt-6 text-center">Researcher</h2>
+                <h3 className="max-w-[150px] font-['Epilogue'] font-normal text-[12px] md:text-[20px] text-center leading-5 md:leading-8 tracking-[0px]">Agency members</h3>
             </div>
-
-            <div className="flex flex-col items-center gap-4 md:w-[800px] h-[744px] w-[180px] border border-[#1F2030] border-solid rounded-tr-md rounded-br-md pt-[60px]">
-                <img src={MentorLogo} alt="Mentor Logo" className="md:w-[85px] md:h-[85px] w-[45px] h-[45px]" />
-                <h2 className="font-['Epilogue'] font-extrabold md:text-[36px] text-[18px] text-center w-[139px] h-12 leading-12 tracking-[0px]">Mentor</h2>
-                <h3 className="w-[198px] font-['Epilogue'] font-normal md:text-[16px] text-[14px] leading-[25px] text-center tracking-[0px] ">I genuinely care about people, and enjoy helping them work on their craft.</h3>
-                <h2 className="h-[25px] font-['Epilogue'] font-normal md:text-[20px] text-[15px] leading-[25px] text-center tracking-[0px] ">Experiences I draw from:</h2>
-                <h3 className="w-[198px] h-8 font-['Epilogue'] font-normal md:text-[16px] text-[14px] leading-[25px] text-center tracking-[0px] ">UX/UI, Product design, Freelancing</h3>
+            <div className="flex flex-col items-center gap-2 md:gap-4 md:w-[800px] h-[280px] md:h-[744px] flex-1 border border-[#1F2030] border-solid rounded-tr-md rounded-br-md pt-[40px] md:pt-[60px] pb-[40px] md:pb-[60px]">
+                <img src={MentorLogo} alt="Mentor Logo" className="w-[50px] h-[50px] md:w-[85px] md:h-[85px]" />
+                <h2 className="font-['Epilogue'] font-extrabold text-[16px] md:text-[36px] text-center max-w-[120px] md:max-w-[139px] leading-tight md:leading-12 tracking-[0px]">Mentor</h2>
+                <h3 className="max-w-[160px] md:max-w-[180px] font-['Epilogue'] font-normal text-[10px] md:text-[16px] leading-4 md:leading-[25px] text-center tracking-[0px] px-2">I genuinely care about people, and enjoy helping them work on their craft.</h3>
+                <h2 className="font-['Epilogue'] font-normal text-[11px] md:text-[20px] leading-5 md:leading-[25px] text-center tracking-[0px]">Experiences I draw from:</h2>
+                <h3 className="max-w-[160px] md:max-w-[180px] font-['Epilogue'] font-normal text-[10px] md:text-[16px] leading-4 md:leading-[25px] text-center tracking-[0px]">UX/UI, Product design, Freelancing</h3>
             </div>
         </div>
     );
@@ -66,34 +50,27 @@ const MoreAboutMe = () => {
 
 const VideoReel = () => {
     return (
-        <div className="w-full flex flex-row items-start gap-4 md:gap-94 mx-[38px] md:mx-[135px] md:pt-[110px] md:pb-[100px]">
-
-            {/* left: video */}
-            <div className="flex flex-col items-center relative shrink-0 basis-[40%]">
+        <div className="w-full flex flex-col md:flex-row items-start gap-8 md:gap-24 mx-[38px] md:mx-[135px] py-12 md:pt-[110px] md:pb-[100px]">
+            <div className="flex flex-col items-center relative w-full md:w-auto md:basis-[40%]">
                 <img
                     src={VideoCover}
                     alt="video reel cover"
-                    className="w-full max-w-[300px] md:max-w-[680px] h-auto object-cover rounded-md"
+                    className="w-full max-w-[320px] md:max-w-[680px] h-auto object-cover rounded-md"
                 />
-
                 <img
                     src={PlayButton}
                     alt="play button"
                     className="w-[60px] h-[60px] md:w-[148px] md:h-[148px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                 />
             </div>
-
-            {/* right: text */}
             <div className="flex flex-col justify-center items-start gap-4 flex-1 md:pt-26">
-                <h2 className="font-['Epilogue'] font-normal text-[12px] md:text-[16px] tracking-[3px] uppercase text-[#EF6D58]">
+                <h2 className="font-['Epilogue'] font-normal text-[14px] md:text-[16px] tracking-[3px] uppercase text-[#EF6D58]">
                     video reel
                 </h2>
-
-                <h3 className="font-['Epilogue'] font-extrabold text-[18px] md:text-[40px] md:leading-12">
+                <h3 className="font-['Epilogue'] font-extrabold text-[24px] md:text-[40px] leading-tight md:leading-12">
                     Unlock The Greatest <br />Value Possible
                 </h3>
-
-                <p className="font-['Epilogue'] font-normal text-[12px] md:text-[16px] w-[300px] md:leading-8 md:w-1/2">
+                <p className="font-['Epilogue'] font-normal text-[14px] md:text-[16px] leading-7 md:leading-8 max-w-full md:max-w-[470px]">
                     Design, business understanding, ability to put themselves in the merchant's shoes meant to partner.
                 </p>
             </div>
@@ -104,9 +81,11 @@ const VideoReel = () => {
 
 const About = () => {
     return (
-        <section id="about" className="bg-white w-full min-h-screen overflow-hidden flex flex-col md:gap-0 gap-[180px]">
+        <section id="about" className="bg-white w-full overflow-hidden flex flex-col py-16 md:py-20 gap-12 md:gap-0">
             <AboutMe />
-            <MoreAboutMe />
+            <div className="mt-12 md:mt-0">
+                <MoreAboutMe />
+            </div>
             <div className="md:w-[1425px] h-px bg-[#F3D1BF] md:mx-auto mx-[38px] mt-[75px] md:mt-[100px]"></div>
             <VideoReel />
         </section>
