@@ -3,7 +3,7 @@ import Header from '../ui/Header';
 
 const Hero = () => {
   return (
-    <section className="bg-[#05226E] w-full min-h-screen overflow-hidden">
+    <section id="hero" className="bg-[#05226E] w-full min-h-screen overflow-hidden">
       <Header />
 
       {/* desktop content */}

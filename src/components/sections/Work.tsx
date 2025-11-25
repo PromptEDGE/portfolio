@@ -34,6 +34,7 @@ const LatestWork = () => {
       : projects.filter((p) => p.category === activeCategory);
 
   return (
+    // heading + work array column container
     <div className="flex flex-col items-center gap-6 w-full">
       <h2 className="text-[16px] uppercase tracking-[3px] text-[#EF6D58] font-medium text-center">
         Portfolio
@@ -66,9 +67,11 @@ const LatestWork = () => {
         })}
       </div>
 
+      {/* work cards row + column container - with framer motion */}
       <motion.div layout className="flex flex-wrap justify-center gap-6 w-full">
         <AnimatePresence>
           {filtered.map((item, index) => {
+            // make the width of the first and fourth cards smaller and equal and that of the second and third card larger and equal
             const isSmall = [0, 3].includes(index);
             const desktopWidth = isSmall ? 'lg:w-[470px]' : 'lg:w-[670px]';
 
@@ -84,7 +87,7 @@ const LatestWork = () => {
                   relative rounded-lg overflow-hidden cursor-pointer group
                   h-[416px]
                   w-full
-                  sm:w-[100%]
+                  sm:w-full
                   md:w-[48%]
                   ${desktopWidth}
                 `}
@@ -92,14 +95,14 @@ const LatestWork = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
 
-                <div className="absolute left-10 bottom-[120px] bg-white text-black pt-[10px] rounded-full w-[120px] h-[38px] flex items-center justify-center uppercase text-[14px]">
+                <div className="absolute left-10 bottom-[120px] bg-white text-black pt-1 rounded-full w-[120px] h-[38px] flex items-center justify-center uppercase text-[14px]">
                   {item.category}
                 </div>
 
-                <h3 className="absolute left-10 bottom-[50px] text-white font-['Epilogue'] font-extrabold text-[32px] leading-[56px] w-full">
+                <h3 className="absolute left-10 bottom-[50px] text-white font-['Epilogue'] font-extrabold text-[32px] leading-14 w-full">
                   {item.title}
                 </h3>
               </motion.div>
@@ -108,8 +111,9 @@ const LatestWork = () => {
         </AnimatePresence>
       </motion.div>
 
+      {/* explore more button */}
       <div className="flex justify-center mt-10">
-        <button className="px-6 py-3 rounded-full text-white font-medium transition font-['Epilogue'] font-black text-[14px] leading-[100%] tracking-[0px] text-center uppercase hover:text-gray-400 border border-gray-600 rounded-[1px]">
+        <button className="px-6 py-3 rounded-0.5 text-white transition font-['Epilogue'] font-black text-[14px] leading-[100%] tracking-[0px] text-center uppercase hover:bg-gray-600 border border-gray-600">
           Explore More
         </button>
       </div>

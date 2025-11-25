@@ -7,25 +7,29 @@ import MarketingIcon from '../../assets/service/marketing-icon.svg';
 
 const OurService = () => {
     return (
-        <div className="flex justify-start items-center gap-4 mx-[135px] my-[100px] w-full mt-[200px]">
+        // service row container
+        <div className="flex justify-start items-center md:gap-32 mx-[38px] md:mx-[135px] my-[100px] w-full mt-[200px]">
 
             {/* service pic */}
-            <div className="flex flex-row justify-start items-center">
+            <div className="md:flex hidden flex-row justify-start items-center">
                 <img src={ServicePic} alt="Service Picture" className="w-[570.76px] h-[570px]" />
             </div>
 
             {/* right side text */}
-            <div className="flex flex-col items-start justify-start gap-8 ml-[235px] mt-[-50px]">
+            <div className="flex flex-col items-center md:items-start justify-start gap-4 md:gap-8 md:ml-[235px] md:mt-[-50px] w-auto mx-[38px] md:mx-0">
                 <h2 className="w-[78px] h-8 font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] uppercase text-[#EF6D58] ">service</h2>
 
-                <h3 className="w-[563px] h-32 font-['Epilogue'] font-extrabold text-[56px] leading-16 tracking-[-1px] text-[#391400]">Making Complex Digital Products</h3>
+                <h3 className="md:w-[563px] md:h-32 font-['Epilogue'] font-extrabold text-[30px] md:text-[56px] leading-16 tracking-[-1px] text-[#391400]">Making Complex Digital Products</h3>
                 <h4 className="w-[470px] h-[63px] font-['Epilogue'] font-normal text-[20px] leading-8 tracking-[0px] text-[#391400]">Agency provides a full service range including technical skills, design, business.</h4>
 
+                {/* image + quote row container */}
                 <div className="flex justify-start items-center gap-4">
-                    <div className="flex justify-start">
+                    {/* image */}
+                    <div className="flex justify-start items-start pb-2">
                         <img src={ServiceSmallPic} alt="Service Small Picture" className="w-16 h-16" />
                     </div>
 
+                    {/* quote column container */}
                     <div className="flex flex-col items-start justify-start gap-2">
                         <p className="w-[386px] h-12 font-['Epilogue'] font-normal text-[14px] leading-6 tracking-[0px] text-[#391400A3]">
                             "Understanding, ability to put themselves in the merchant's shoes. It is meant to partner."
@@ -43,45 +47,54 @@ const OurService = () => {
 
 const MoreService = () => {
     return (
-        <div className="flex flex-col justify-start items-start gap-4 mx-[135px] my-[135px]">
-            <div className="flex flex-col justify-start items-start gap-4">
+        // image + text row container (column on mobile)
+        <div className="flex flex-col justify-start items-center md:items-start gap-4 mx-[38px] my-[60px] md:mx-[135px] md:my-[65px]">
+
+            {/* heading column container */}
+            <div className="flex flex-col justify-start items-center md:items-start gap-4">
                 <h2 className="w-[78px] h-8 font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] uppercase text-[#EF6D58]">Service</h2>
-                <h3 className="w-[336] h-[96] font-['Epilogue'] font-extrabold text-[40px] leading-[48px] tracking-[-1px] text-[#391400]">How Our Agency<br /> Can Help</h3>
+                <h3 className="md:w-[300px] h-[96] font-['Epilogue'] font-extrabold text-[28px] md:text-[40px] leading-12 tracking-[-1px] text-[#391400]">How Our Agency Can Help</h3>
             </div> 
 
-            <div className="flex justify-start items-center">
+            {/* service cards row container (column on mobile) */}
+            <div className="flex md:flex-row flex-col justify-start items-center gap-4 md:gap-0">
 
-                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-tl-md border rounded-bl-md w-[391px] h-[400px]">
-                    <div className="relative top-[40px] left-10">
+                {/* first item column container */}
+                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-md md:rounded-tr-none md:rounded-br-none md:rounded-tl-md md:rounded-bl-md w-auto md:w-[391px] h-[400px]">
+                    <div className="relative top-10 left-10">
                         <img src={Oval} alt="Oval Icon" className="w-20 h-20" />
                         <img src={DesignIcon} alt="Design Icon" className="absolute h-8 w-8 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
                     </div>
-                    <h2 className="w-[83px] h-8 font-['Epilogue'] font-bold font-bold text-[24px] leading-8 tracking-[0px] ml-10 mt-10">Design</h2>
+                    <h2 className="w-[83px] h-8 font-['Epilogue'] font-bold text-[24px] leading-8 tracking-[0px] ml-10 mt-10">Design</h2>
                     <p className="w-[294px] h-[70px] font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] ml-10 text-[#391400A3]">Agency provides a full service range including technical skills, design.</p>
 
                     <a href="#learn more" className="w-[89px] h-8 font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] text-[#391400] hover:text-gray-400 ml-10">Learn More</a>
                 </div>
 
-                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-tl-md border rounded-bl-md w-[391px] h-[400px]">
-                    <div className="relative top-[40px] left-10">
+                {/* second item column container */}
+                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] md:border-x-0 rounded-md md:rounded-tl-none md:rounded-tr-none md:rounded-bl-none md:rounded-br-none w-auto md:w-[391px] h-[400px]">
+                    {/* relative image container */}
+                    <div className="relative top-10 left-10">
                         <img src={Oval} alt="Oval Icon" className="w-20 h-20" />
                         <img src={DevIcon} alt="Development Icon" className="absolute h-8 w-8 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
                     </div>
-                    <h2 className="w-[83px] h-8 font-['Epilogue'] font-bold font-bold text-[24px] leading-8 tracking-[0px] ml-10 mt-10">Development</h2>
+                    <h2 className="w-[83px] h-8 font-['Epilogue'] font-bold text-[24px] leading-8 tracking-[0px] ml-10 mt-10">Development</h2>
                     <p className="w-[294px] h-[70px] font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] ml-10 text-[#391400A3]">Full service range including technical skills, design, business.</p>
 
-                    <a href="#learn more" className="w-[89px] h-8 font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] text-[#391400] hover:text-gray-400 ml-10 w-full">Discover More</a>
+                    <a href="#learn more" className="h-8 font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] text-[#391400] hover:text-gray-400 ml-10 w-full">Discover More</a>
                 </div>
 
-                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-tl-md border rounded-bl-md w-[391px] h-[400px]">
-                    <div className="relative top-[40px] left-10">
+                {/* third item column container */}
+                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-md md:rounded-tl-none md:rounded-bl-none w-auto md:w-[391px] h-[400px]">
+                    {/* relative image container */}
+                    <div className="relative top-10 left-10">
                         <img src={Oval} alt="Oval Icon" className="w-20 h-20" />
                         <img src={MarketingIcon} alt="Marketing Icon" className="absolute h-8 w-8 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
                     </div>
-                    <h2 className="w-[83px] h-8 font-['Epilogue'] font-bold font-bold text-[24px] leading-8 tracking-[0px] ml-10 mt-10">Marketing</h2>
+                    <h2 className="w-[83px] h-8 font-['Epilogue'] font-bold text-[24px] leading-8 tracking-[0px] ml-10 mt-10">Marketing</h2>
                     <p className="w-[294px] h-[70px] font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] ml-10 text-[#391400A3]">Technical skills, design, business understanding, ability.</p>
 
-                    <a href="#learn more" className="w-[89px] h-8 w-full font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] text-[#391400] hover:text-gray-400 ml-10">Explore Now</a>
+                    <a href="#learn more" className="h-8 w-full font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] text-[#391400] hover:text-gray-400 ml-10">Explore Now</a>
                 </div>
             </div>
         </div>
@@ -91,7 +104,7 @@ const MoreService = () => {
 
 const Service = () => {
 return (
-    <section id="service" className="bg-white w-full min-h-screen overflow-hidden flex flex-col gap-12">
+    <section id="service" className="bg-white w-full min-h-screen overflow-hidden flex flex-col">
         <OurService />
         <MoreService />
     </section>
