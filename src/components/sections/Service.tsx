@@ -7,10 +7,14 @@ import MarketingIcon from '../../assets/service/marketing-icon.svg';
 
 const OurService = () => {
     return (
-        <div className="flex justify-start items-center gap-4 my-[400px] w-full mt-[200px]">
+        <div className="flex justify-start items-center gap-4 mx-[135px] my-[100px] w-full mt-[200px]">
+
+            {/* service pic */}
             <div className="flex flex-row justify-start items-center">
                 <img src={ServicePic} alt="Service Picture" className="w-[570.76px] h-[570px]" />
             </div>
+
+            {/* right side text */}
             <div className="flex flex-col items-start justify-start gap-8 ml-[235px] mt-[-50px]">
                 <h2 className="w-[78px] h-8 font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] uppercase text-[#EF6D58] ">service</h2>
 

@@ -66,7 +66,7 @@ const MoreAboutMe = () => {
 
 const VideoReel = () => {
     return (
-        <div className="w-full flex flex-row items-start gap-4 md:gap-24 mx-[38px] md:mx-[135px] md:pt-[110px] md:pb-[100px]">
+        <div className="w-full flex flex-row items-start gap-4 md:gap-94 mx-[38px] md:mx-[135px] md:pt-[110px] md:pb-[100px]">
 
             {/* left: video */}
             <div className="flex flex-col items-center relative shrink-0 basis-[40%]">
