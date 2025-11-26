@@ -39,15 +39,15 @@ const GetInTouchDataBlock = () => {
                 <div className="md:absolute md:top-35 md:left-40 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-0">
                     <div className="flex flex-col justify-center items-center gap-6 w-full md:w-[470px] bg-white rounded-md p-6 md:p-0 md:h-[464px] shadow-lg md:shadow-none">
                         <h4 className="font-['Epilogue'] font-bold text-[20px] md:text-[24px] leading-8 tracking-[0px] text-[#391400]">Get In Touch</h4>
-                        <form onSubmit={handleSubmit} className="flex flex-col gap-4 justify-center items-start w-full">
+                        <form onSubmit={handleSubmit} className="flex flex-col gap-4 justify-center items-start w-full md:p-10">
                             <input onChange={handleChange} name="email" value={formData.email} type="text" placeholder="your email" className="w-full md:w-[374px] h-12 outline-none border border-solid border-[#F3D1BF] rounded-md p-4" />
                             <input onChange={handleChange} name="subject" value={formData.subject} type="text" placeholder="Subject" className="w-full md:w-[374px] h-12 outline-none border border-solid border-[#F3D1BF] rounded-md p-4" />
-                            <textarea onChange={handleChange} name="message" value={formData.message} placeholder="Message" className="w-full md:w-[374px] h-[96px] p-4 outline-none rounded-md border border-solid border-[#F3D1BF]" />
+                            <textarea onChange={handleChange} name="message" value={formData.message} placeholder="Message" className="w-full md:w-[374px] h-24 p-4 outline-none rounded-md border border-solid border-[#1F2030]" />
                             <button type="submit" className="w-[154px] h-12 bg-[#EF6D58] rounded-md font-['Epilogue'] font-black text-[14px] leading-[100%] tracking-[0px] text-center uppercase text-white mt-4">Submit Now</button>
                         </form>
                     </div>
                     <div className="hidden md:block relative ml-118 mt-30">
-                        <img src={Oval} alt="oval" className="w-full max-w-[80px] md:max-w-none" />
+                        <img src={Oval} alt="oval" className="w-full max-w-20 md:max-w-none" />
                         <img src={LocationPin} alt="location pin" className="absolute top-5 right-6 w-8 h-8 md:w-auto md:h-auto" />
                     </div>
                 </div>          

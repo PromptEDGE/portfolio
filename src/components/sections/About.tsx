@@ -8,7 +8,7 @@ import PlayButton from '../../assets/about/play-button.svg';
 const AboutMe = () => {
     return(
         <div className="flex flex-col md:flex-row items-center md:items-center md:gap-0 gap-6 mx-[38px] md:mx-[135px] my-12 md:my-[69px]">
-            <img src={AboutPic} alt="About Photo" className="w-full max-w-[240px] md:w-[550px] md:h-[770px] h-auto object-cover rounded-lg"/>
+            <img src={AboutPic} alt="About Photo" className="w-full max-w-[640px] md:w-[550px] md:h-[770px] h-auto object-cover rounded-lg"/>
             <div className="flex flex-col justify-start md:justify-end items-center md:items-end gap-3 md:gap-4 md:pt-[210px] w-full">
                 <h2 className="font-['Epilogue'] font-normal text-[14px] md:text-[16px] leading-8 tracking-[3px] uppercase text-[#EF6D58] text-center md:text-left">about</h2>
                 <h3 className="font-['Epilogue'] font-extrabold text-[24px] md:text-[44px] leading-tight md:leading-16 tracking-[-1px] max-w-full md:max-w-[800px] md:mr-7 text-center md:text-left">I'm Michael <span className="whitespace-nowrap">Edekin</span></h3>
@@ -37,12 +37,12 @@ const MoreAboutMe = () => {
                 <h2 className="font-['Epilogue'] font-extrabold text-[16px] md:text-[36px] leading-tight md:leading-1 tracking-[0px] mt-0 md:mt-6 text-center">Researcher</h2>
                 <h3 className="max-w-[150px] font-['Epilogue'] font-normal text-[12px] md:text-[20px] text-center leading-5 md:leading-8 tracking-[0px]">Agency members</h3>
             </div>
-            <div className="flex flex-col items-center gap-2 md:gap-4 md:w-[800px] h-[280px] md:h-[744px] flex-1 border border-[#1F2030] border-solid rounded-tr-md rounded-br-md pt-[40px] md:pt-[60px] pb-[40px] md:pb-[60px]">
+            <div className="flex flex-col items-center gap-2 md:gap-4 md:w-[800px] h-[280px] md:h-[744px] flex-1 border border-[#1F2030] border-solid rounded-tr-md rounded-br-md pt-10 md:pt-[60px] pb-10 md:pb-[60px]">
                 <img src={MentorLogo} alt="Mentor Logo" className="w-[50px] h-[50px] md:w-[85px] md:h-[85px]" />
                 <h2 className="font-['Epilogue'] font-extrabold text-[16px] md:text-[36px] text-center max-w-[120px] md:max-w-[139px] leading-tight md:leading-12 tracking-[0px]">Mentor</h2>
-                <h3 className="max-w-[160px] md:max-w-[180px] font-['Epilogue'] font-normal text-[10px] md:text-[16px] leading-4 md:leading-[25px] text-center tracking-[0px] px-2">I genuinely care about people, and enjoy helping them work on their craft.</h3>
+                <h3 className="max-w-40 md:max-w-[180px] font-['Epilogue'] font-normal text-[10px] md:text-[16px] leading-4 md:leading-[25px] text-center tracking-[0px] px-2">I genuinely care about people, and enjoy helping them work on their craft.</h3>
                 <h2 className="font-['Epilogue'] font-normal text-[11px] md:text-[20px] leading-5 md:leading-[25px] text-center tracking-[0px]">Experiences I draw from:</h2>
-                <h3 className="max-w-[160px] md:max-w-[180px] font-['Epilogue'] font-normal text-[10px] md:text-[16px] leading-4 md:leading-[25px] text-center tracking-[0px]">UX/UI, Product design, Freelancing</h3>
+                <h3 className="max-w-40 md:max-w-[180px] font-['Epilogue'] font-normal text-[10px] md:text-[16px] leading-4 md:leading-[25px] text-center tracking-[0px]">UX/UI, Product design, Freelancing</h3>
             </div>
         </div>
     );

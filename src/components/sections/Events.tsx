@@ -16,8 +16,8 @@ const EventsDataBlock = () => {
 
                 <div className="flex flex-col justify-center items-start gap-4 border border-[#3A3C56] w-full md:w-[370px] h-auto rounded-md px-6 py-8">
                     <div className="flex flex-row justify-start items-start gap-2">
-                        <h2 className="font-['Epilogue'] font-extrabold text-[56px] md:text-[72px] leading-16 md:leading-[80px] tracking-[-2px] text-white">3</h2>
-                        <h3 className="font-['Epilogue'] font-bold text-[20px] md:text-[24px] leading-[28px] md:leading-8 text-white">November 2021</h3>
+                        <h2 className="font-['Epilogue'] font-extrabold text-[56px] md:text-[72px] leading-16 md:leading-20 tracking-[-2px] text-white">3</h2>
+                        <h3 className="font-['Epilogue'] font-bold text-[20px] md:text-[24px] leading-7 md:leading-8 text-white">November 2021</h3>
                     </div>
 
                     <div className="flex flex-row items-center gap-3">
@@ -40,8 +40,8 @@ const EventsDataBlock = () => {
 
                 <div className="flex flex-col justify-center items-start gap-4 border border-[#3A3C56] w-full md:w-[370px] h-auto rounded-md px-6 py-8">
                     <div className="flex flex-row justify-start items-start gap-6">
-                        <h2 className="font-['Epilogue'] font-extrabold text-[56px] md:text-[72px] leading-16 md:leading-[80px] tracking-[-2px] text-white">15</h2>
-                        <h3 className="font-['Epilogue'] font-bold text-[20px] md:text-[24px] leading-[28px] md:leading-8 text-white">November 2021</h3>
+                        <h2 className="font-['Epilogue'] font-extrabold text-[56px] md:text-[72px] leading-16 md:leading-20 tracking-[-2px] text-white">15</h2>
+                        <h3 className="font-['Epilogue'] font-bold text-[20px] md:text-[24px] leading-7 md:leading-8 text-white">November 2021</h3>
                     </div>
 
                     <div className="flex flex-row items-center gap-3">
@@ -64,8 +64,8 @@ const EventsDataBlock = () => {
 
                 <div className="flex flex-col justify-center items-start gap-4 border border-[#3A3C56] w-full md:w-[370px] h-auto rounded-md px-6 py-8">
                     <div className="flex flex-row justify-start items-start gap-2">
-                        <h2 className="font-['Epilogue'] font-extrabold text-[56px] md:text-[72px] leading-16 md:leading-[80px] tracking-[-2px] text-white">2</h2>
-                        <h3 className="font-['Epilogue'] font-bold text-[20px] md:text-[24px] leading-[28px] md:leading-8 text-white">December 2021</h3>
+                        <h2 className="font-['Epilogue'] font-extrabold text-[56px] md:text-[72px] leading-16 md:leading-20 tracking-[-2px] text-white">2</h2>
+                        <h3 className="font-['Epilogue'] font-bold text-[20px] md:text-[24px] leading-7 md:leading-8 text-white">December 2021</h3>
                     </div>
 
                     <div className="flex flex-row items-center gap-3">
