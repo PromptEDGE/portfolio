@@ -7,30 +7,37 @@ const NewLook = () => (
     // new look  + feature pic row container
     <div className="w-full flex justify-center">
         {/* new look heading column */}
-        <div className="w-full max-w-[1440px] flex flex-col md:flex-row items-start gap-8 md:gap-12 px-4 md:mx-[135px] mx-[38px] my-1">
+        <div className="w-full max-w-[1440px] flex flex-col md:flex-row items-center gap-8 md:gap-12 px-4 md:mx-[135px] mx-[38px] my-1">
+
             {/* left: text */}
-            <div className="flex flex-col items-start gap-4 pt-12 md:pt-[105px] flex-1">
-                <h2 className="font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[3px] uppercase text-[#EF6D58]">
+            <div className="flex flex-col md:items-start items-center gap-4 pt-12 md:pt-[105px] flex-1">
+
+                <h2 className="font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[3px] uppercase text-[#EF6D58] md:text-left text-center">
                     features
                 </h2>
+
                 <h3 className="font-['Epilogue'] font-extrabold text-[32px] md:text-[40px] lg:text-[56px] text-[#391400] leading-tight tracking-[-1px]">
                     Give Your Site <br />A New Look
                 </h3>
+
                 <p className="font-['Epilogue'] font-normal text-[16px] md:text-[20px] text-[#391400] leading-8 max-w-[90vw] md:max-w-[470px]">
                     Service range including technical skills, design, business understanding.
                 </p>
+
                 <div className="flex flex-row gap-2 w-full">
                     <img src={Check} alt="check icon" className="w-5 h-5 md:w-8 md:h-8" />
                     <p className="font-['Epilogue'] text-[16px] text-[#391400A3] leading-8">
                         Range including technical skills
                     </p>
                 </div>
+
                 <div className="flex flex-row gap-2 w-full">
                     <img src={Check} alt="check icon" className="w-5 h-5 md:w-8 md:h-8" />
                     <p className="font-['Epilogue'] text-[16px] text-[#391400A3] leading-8">
                         Business understanding
                     </p>
                 </div>
+
                 <div className="flex flex-row gap-2 w-full">
                     <img src={Check} alt="check icon" className="w-5 h-5 md:w-8 md:h-8" />
                     <p className="font-['Epilogue'] text-[16px] text-[#391400A3] leading-8">
@@ -38,7 +45,7 @@ const NewLook = () => (
                     </p>
                 </div>
             </div>
-            {/* right: image */}
+            {/* right: image hidden on mobile */}
             <div className="flex justify-center items-center w-full md:w-auto">
                 <img
                     src={FeaturePic}
@@ -52,12 +59,16 @@ const NewLook = () => (
 
 
 const MoreFeatures = () => (
-    // feature row - text + image
-    <div className="flex flex-col lg:flex-row lg:justify-start gap-8 px-4 md:mx-[135px] mx-0">
+    // feature row - text + image (column on mobile)
+    <div className="flex flex-col lg:flex-row lg:justify-start gap-8 md:mx-[135px] mx-[38px]">
+
         {/* left side heading */}
-        <div className="flex flex-col items-start gap-4 pt-20 md:pt-[200px] w-full mx-[38px]">
+        <div className="flex flex-col justify-center md:items-start items-center gap-4 pt-20 md:pt-[200px] md:w-full mx-[38px]">
+
             <h2 className="font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[3px] uppercase w-[62px] h-8 text-[#EF6D58]">features</h2>
-            <h3 className="font-['Epilogue'] font-normal text-[20px] md:text-[24px] text-[#391400] leading-8 tracking-[0px] max-w-[90vw] md:max-w-[370px]">Long run, and work as an extension of the merchant's team.</h3>
+
+            <h3 className="font-['Epilogue'] font-normal text-[20px] md:text-[24px] text-[#391400] leading-8 tracking-[0px] max-w-[90vw] md:max-w-[370px] text-center md:text-left">Long run, and work as an extension of the merchant's team.</h3>
+
             <a href="#read more" className="w-[84px] h-8 font-['Epilogue'] font-normal text-[16px] text-[#391400] leading-8 tracking-[0px] hover:text-gray-400">Read More</a>
         </div>
 
@@ -69,11 +80,14 @@ const MoreFeatures = () => (
 
                 {/* relative image container*/}
                 <div className="relative top-8 left-10">
+
                     <img src={Oval} alt="Oval Image" className="w-20 h-20 object-cover" />
+
                     <img src={Shape} alt="Chart icon" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8" />
                 </div>
 
                 <p className="w-[154px] md:h-8 font-['Epilogue'] font-bold text-[24px] leading-8 mt-8 ml-10">Professional</p>
+
                 <p className="w-60 h-[70px] font-['Epilogue'] font-normal text-[16px] leading-8 ml-10">Full service range including technical skills, design.</p>
             </div>
 
@@ -82,11 +96,14 @@ const MoreFeatures = () => (
 
                 {/* relative image container*/}
                 <div className="relative top-8 left-10">
+
                     <img src={Oval} alt="Oval Image" className="w-20 h-20 object-cover" />
+
                     <img src={Shape} alt="Chart icon" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8" />
                 </div>
                 
                 <p className="w-[156px] h-8 font-['Epilogue'] font-bold text-[24px] leading-8 mt-8 ml-10">Accessibility</p>
+
                 <p className="w-60 h-[70px] font-['Epilogue'] font-normal text-[16px] leading-8 ml-10">Business understanding, ability to put themselves.</p>
             </div>
         </div>
@@ -95,7 +112,7 @@ const MoreFeatures = () => (
 
 
 const Features = () => (
-    <section className="bg-white flex flex-col w-full py-16 md:py-32">
+    <section className="bg-white flex flex-col w-full py-8">
         <NewLook />
         <MoreFeatures />
     </section>

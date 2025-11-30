@@ -9,7 +9,7 @@ const AboutMe = () => {
     return(
         <div className="flex flex-col md:flex-row items-center md:items-center md:gap-0 gap-6 mx-[38px] md:mx-[135px] my-12 md:my-[69px]">
             <img src={AboutPic} alt="About Photo" className="w-full max-w-[640px] md:w-[550px] md:h-[770px] h-auto object-cover rounded-lg"/>
-            <div className="flex flex-col justify-start md:justify-end items-center md:items-end gap-3 md:gap-4 md:pt-[210px] w-full">
+            <div className="flex flex-col justify-start md:justify-start items-center md:items-start gap-3 md:gap-4 md:pt-[210px] w-full">
                 <h2 className="font-['Epilogue'] font-normal text-[14px] md:text-[16px] leading-8 tracking-[3px] uppercase text-[#EF6D58] text-center md:text-left">about</h2>
                 <h3 className="font-['Epilogue'] font-extrabold text-[24px] md:text-[44px] leading-tight md:leading-16 tracking-[-1px] max-w-full md:max-w-[800px] md:mr-7 text-center md:text-left">I'm Michael <span className="whitespace-nowrap">Edekin</span></h3>
                 <h4 className="font-['Epilogue'] font-normal text-[16px] md:text-[20px] leading-7 md:leading-8 tracking-[0px] text-center md:text-left">AI/ML Engineer</h4>
@@ -27,9 +27,9 @@ const AboutMe = () => {
 const MoreAboutMe = () => {
     return (
         <div className="flex items-center gap-0 md:h-[744px] h-auto mx-[38px] md:mx-[135px] my-12 md:my-0"> 
-            <div className="flex flex-col items-center gap-4 md:w-[800px] h-[280px] md:h-[744px] flex-1 border border-[#1F2030] border-solid rounded-tl-md rounded-bl-md pt-[60px] pb-[60px]">
+            <div className="flex flex-col items-center md:items-start gap-4 md:w-[800px] h-[280px] md:h-[744px] flex-1 border border-[#1F2030] border-solid rounded-tl-md rounded-bl-md pt-[60px] pb-[60px]">
                 <img src={AiLogo} alt="AI/ML Logo" className="w-[50px] h-[50px] md:w-[85px] md:h-[85px]" />
-                <h2 className="font-['Epilogue'] font-extrabold text-[16px] md:text-[36px] leading-tight md:leading-12 tracking-[0px] text-center px-4">AI/ML Engineer</h2>
+                <h2 className="font-['Epilogue'] font-extrabold text-[16px] md:text-[36px] leading-tight md:leading-12 tracking-[0px] text-center md:text-left px-4">AI/ML Engineer</h2>
                 <h3 className="max-w-[180px] font-['Epilogue'] font-normal text-[12px] md:text-[20px] text-center leading-5 md:leading-8 tracking-[0px]">Years of experience</h3>
             </div>
             <div className="flex flex-col items-center gap-4 md:w-[800px] h-[280px] md:h-[744px] flex-1 border border-[#1F2030] border-solid border-x-0 pt-[60px] pb-[60px]">

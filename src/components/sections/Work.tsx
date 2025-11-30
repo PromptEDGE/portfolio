@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-
 import Sofa from '../../assets/work/sofa.svg';
 import KeyBoard from '../../assets/work/key-board.svg';
 import WorkMedia from '../../assets/work/work-media.svg';
@@ -44,6 +43,7 @@ const LatestWork = () => {
         Latest Work
       </h3>
 
+      {/* categories row container */}
       <div className="flex items-center justify-center gap-6 flex-wrap mt-4">
         {categories.map((cat) => {
           const count = projects.filter((p) =>
@@ -67,48 +67,51 @@ const LatestWork = () => {
         })}
       </div>
 
-      {/* work cards row + column container - with framer motion */}
-      <motion.div layout className="flex flex-wrap justify-center gap-6 w-full">
-        <AnimatePresence>
-          {filtered.map((item, index) => {
-            // make the width of the first and fourth cards smaller and equal and that of the second and third card larger and equal
-            const isSmall = [0, 3].includes(index);
-            const desktopWidth = isSmall ? 'lg:w-[470px]' : 'lg:w-[670px]';
-
-            return (
-              <motion.div
-                key={item.id}
-                layout
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.3 }}
-                className={`
-                  relative rounded-lg overflow-hidden cursor-pointer group
-                  h-[416px]
-                  w-full
-                  sm:w-full
-                  md:w-[48%]
-                  ${desktopWidth}
-                `}
-              >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-
-                <div className="absolute left-10 bottom-[120px] bg-white text-black pt-1 rounded-full w-[120px] h-[38px] flex items-center justify-center uppercase text-[14px]">
-                  {item.category}
-                </div>
-
-                <h3 className="absolute left-10 bottom-[50px] text-white font-['Epilogue'] font-extrabold text-[32px] leading-14 w-full">
-                  {item.title}
-                </h3>
-              </motion.div>
-            );
-          })}
-        </AnimatePresence>
+      {/* work cards in exactly two rows with equal spacing (horizontal + vertical) */}
+      <motion.div layout className="flex flex-col w-full gap-8">
+        {Array.from({ length: Math.ceil(filtered.length / 2) }, (_, rowIndex) => {
+          const rowItems = filtered.slice(rowIndex * 2, rowIndex * 2 + 2);
+          return (
+            <div key={rowIndex} className="flex flex-col md:flex-row justify-center gap-8">
+              <AnimatePresence>
+                {rowItems.map((item, innerIndex) => {
+                  const globalIndex = rowIndex * 2 + innerIndex;
+                  // first and last (index 0 & 3) small; middle (1 & 2) large
+                  const isSmall = [0, 3].includes(globalIndex);
+                  const desktopWidth = isSmall ? 'lg:w-[470px]' : 'lg:w-[670px]';
+                  return (
+                    <motion.div
+                      key={item.id}
+                      layout
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.9 }}
+                      transition={{ duration: 0.3 }}
+                      className={`
+                        relative rounded-lg overflow-hidden cursor-pointer group
+                        h-[416px]
+                        w-full sm:w-full md:w-[48%]
+                        ${desktopWidth}
+                      `}
+                    >
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                      <div className="absolute left-10 bottom-[120px] bg-white text-black pt-1 rounded-full w-[120px] h-[38px] flex items-center justify-center uppercase text-[14px]">
+                        {item.category}
+                      </div>
+                      <h3 className="absolute left-10 bottom-[50px] text-white font-['Epilogue'] font-extrabold text-[32px] leading-14 w-full">
+                        {item.title}
+                      </h3>
+                    </motion.div>
+                  );
+                })}
+              </AnimatePresence>
+            </div>
+          );
+        })}
       </motion.div>
 
       {/* explore more button */}

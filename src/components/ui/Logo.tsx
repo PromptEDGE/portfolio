@@ -5,6 +5,7 @@ const Logo = () => {
     return ( 
         <a href="#hero">
             <div className="flex items-center gap-3">
+                {/* logo + text row container */}
                 <div className="relative w-12 h-auto shrink-0">
                     <img
                         src={HeroLogoOuter}
