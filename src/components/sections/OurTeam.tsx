@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import TeamPhoto1 from '../../assets/our-team/team-photo-1.svg';
 import TeamPhoto2 from '../../assets/our-team/team-photo-2.svg';
 import TeamPhoto3 from '../../assets/our-team/team-photo-3.svg';
