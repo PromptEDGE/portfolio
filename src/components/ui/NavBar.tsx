@@ -28,7 +28,7 @@ const NavBar = () => {
                     </a>
                     <a
                         href="#contact"
-                        className="absolute left-[1177px] md:w-[138px] -top-5 h-12 bg-white flex items-center justify-center hover:bg-[#FF6A00] transition-colors duration-200 pl-[5px] pt-[4.67px] rounded-[40px] font-['Epilogue'] font-black text-[18px] leading-3.5 uppercase text-center text-black"
+                        className="absolute left-[1050px] md:w-[138px] -top-5 h-12 bg-white flex items-center justify-center hover:bg-[#FF6A00] transition-colors duration-200 pl-[5px] pt-[4.67px] rounded-[40px] font-['Epilogue'] font-black text-[18px] leading-3.5 uppercase text-center text-black"
                     >
                         Contact Us
                     </a>

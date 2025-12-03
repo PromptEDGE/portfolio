@@ -7,7 +7,7 @@ const NewLook = () => (
     // new look  + feature pic row container
     <div className="w-full flex justify-center">
         {/* new look heading column */}
-        <div className="w-full max-w-[1440px] flex flex-col md:flex-row items-center gap-8 md:gap-12 px-4 md:mx-[135px] mx-[38px] my-1">
+        <div className="w-full max-w-[1440px] flex flex-col md:flex-row items-center gap-8 md:gap-12 md:mx-[135px] mx-[38px] my-1">
 
             {/* left: text */}
             <div className="flex flex-col md:items-start items-center gap-4 pt-12 md:pt-[105px] flex-1">
@@ -24,27 +24,31 @@ const NewLook = () => (
                     Service range including technical skills, design, business understanding.
                 </p>
 
+                {/* bullet + text row container */}
                 <div className="flex flex-row gap-2 w-full">
-                    <img src={Check} alt="check icon" className="w-5 h-5 md:w-8 md:h-8" />
+                    <img src={Check} alt="check icon" />
                     <p className="font-['Epilogue'] text-[16px] text-[#391400A3] leading-8">
                         Range including technical skills
                     </p>
                 </div>
 
+                {/* bullet + text row container */}
                 <div className="flex flex-row gap-2 w-full">
-                    <img src={Check} alt="check icon" className="w-5 h-5 md:w-8 md:h-8" />
+                    <img src={Check} alt="check icon" />
                     <p className="font-['Epilogue'] text-[16px] text-[#391400A3] leading-8">
                         Business understanding
                     </p>
                 </div>
 
+                {/* bullet + text row container */}
                 <div className="flex flex-row gap-2 w-full">
-                    <img src={Check} alt="check icon" className="w-5 h-5 md:w-8 md:h-8" />
+                    <img src={Check} alt="check icon" />
                     <p className="font-['Epilogue'] text-[16px] text-[#391400A3] leading-8">
                         Partner on the long run
                     </p>
                 </div>
             </div>
+
             {/* right: image hidden on mobile */}
             <div className="flex justify-center items-center w-full md:w-auto">
                 <img
@@ -60,14 +64,14 @@ const NewLook = () => (
 
 const MoreFeatures = () => (
     // feature row - text + image (column on mobile)
-    <div className="flex flex-col lg:flex-row lg:justify-start gap-8 md:mx-[135px] mx-[38px]">
+    <div className="flex flex-col md:flex-row md:justify-start gap-8 md:mx-[135px] mx-[38px]">
 
         {/* left side heading */}
-        <div className="flex flex-col justify-center md:items-start items-center gap-4 pt-20 md:pt-[200px] md:w-full mx-[38px]">
+        <div className="flex flex-col justify-center md:items-start items-center gap-4 pt-20 md:pt-[200px] md:w-full">
 
-            <h2 className="font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[3px] uppercase w-[62px] h-8 text-[#EF6D58]">features</h2>
+            <h2 className="font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[3px] uppercase w-[62px] h-8 text-[#EF6D58] text-center md:text-left">features</h2>
 
-            <h3 className="font-['Epilogue'] font-normal text-[20px] md:text-[24px] text-[#391400] leading-8 tracking-[0px] max-w-[90vw] md:max-w-[370px] text-center md:text-left">Long run, and work as an extension of the merchant's team.</h3>
+            <h3 className="font-['Epilogue'] font-normal text-[20px] md:text-[24px] text-[#391400] leading-8 tracking-[0px] max-w-[90vw] md:max-w-[330px] text-center md:text-left">Long run, and work as an extension of the merchant's team.</h3>
 
             <a href="#read more" className="w-[84px] h-8 font-['Epilogue'] font-normal text-[16px] text-[#391400] leading-8 tracking-[0px] hover:text-gray-400">Read More</a>
         </div>

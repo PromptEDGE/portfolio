@@ -7,7 +7,9 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
+        // header component
         <header className="w-full bg-[#05226E] fixed top-0 left-0 z-50">
+            
             {/* logo + navbar row container */}
             <div className="mx-auto w-full md:max-w-[1440px] flex items-center justify-between py-6 px-4">
                 <div className="flex items-center">
