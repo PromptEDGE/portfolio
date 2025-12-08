@@ -69,7 +69,9 @@ const MoreFeatures = () => (
         {/* left side heading */}
         <div className="flex flex-col justify-center md:items-start items-center gap-4 pt-20 md:pt-[200px] md:w-full">
 
-            <h2 className="font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[3px] uppercase w-[62px] h-8 text-[#EF6D58] text-center md:text-left">features</h2>
+            <h2 className="font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[3px] uppercase text-[#EF6D58] md:text-left text-center">
+                    features
+            </h2>
 
             <h3 className="font-['Epilogue'] font-normal text-[20px] md:text-[24px] text-[#391400] leading-8 tracking-[0px] max-w-[90vw] md:max-w-[330px] text-center md:text-left">Long run, and work as an extension of the merchant's team.</h3>
 
@@ -77,7 +79,7 @@ const MoreFeatures = () => (
         </div>
 
         {/* right image feature cards column (mobile) / row (desktop) container*/}
-        <div className="flex flex-col md:flex-row justify-center items-center mt-10 md:mt-[190px] md:mx-0 mx-[38px] md:w-full w-auto">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-10 md:mt-[190px] md:mx-0 mx-[38px] md:w-full">
 
             {/* first card column containers */}
             <div className="flex flex-col items-start gap-4 border border-solid border-[#F3D1BF] md:rounded-tl-md md:rounded-tr-none md:rounded-br-none md:rounded-bl-md rounded-md w-full md:w-[336px] h-[336px] bg-white shadow-md">

@@ -22,7 +22,7 @@ const awards: Awards[] = [
 
 const OurAwardsDataBlock = () => {
     return (
-        <section className="flex flex-col justify-center items-center bg-white py-12 px-6 md:px-16 lg:px-32 gap-0">
+        <section className="flex flex-col justify-center items-center bg-white py-12 px-6 md:px-16 lg:px-32 md:my-50 gap-0">
             <h3 className="font-['Epilogue'] font-extrabold text-[32px] md:text-[40px] leading-10 md:leading-12 text-center text-[#391400] mb-12 md:mb-16">
                 Our Awards
             </h3>
@@ -52,7 +52,7 @@ const OurAwardsDataBlock = () => {
             <div className="w-full flex justify-center items-center mt-8">
                 <p className="font-['Epilogue'] font-normal text-[16px] text-[#391400] leading-8 tracking-[0px]">Want more awards?</p>
 
-                <button className="font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] text-[#391400] ml-2 hover:text-gray-400">Explore now</button>
+                <button className="font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] text-[#391400] ml-2 hover:text-[#FF6A00]">Explore now</button>
             </div>
 
         </section>

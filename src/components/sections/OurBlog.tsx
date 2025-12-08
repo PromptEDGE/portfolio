@@ -18,19 +18,32 @@ const blogs: Blogs[] = [
 
 const OurBlog = () => {
     return (
+        // section column container
         <section className="flex flex-col justify-center items-center bg-white py-16 md:py-20 px-[38px] md:px-[75px] lg:px-20 gap-12 md:gap-16">
+
+            {/* heading + discover all button row container (column on mobile) */}
             <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-center gap-8 md:gap-0">
+
+                {/* heading column container */}
                 <div className="flex flex-col justify-end items-center md:items-start gap-4 md:gap-6">
+
                     <h5 className="font-['Epilogue'] font-normal text-[14px] md:text-[16px] leading-8 tracking-[3px] uppercase text-[#EF6D58]">
                         Our Blog
                     </h5>
+                    
                     <h2 className="font-['Epilogue'] font-extrabold text-[32px] md:text-[56px] leading-tight md:leading-16 tracking-[-1px] text-[#391400] text-center md:text-left">Latest Blog<br /> Articles</h2>
                 </div>
+
+                {/* discover all button */}
                 <div className="flex justify-start md:justify-end items-center">
-                    <button className="font-['Epilogue'] font-extrabold text-[12px] md:text-[14px] leading-[100%] tracking-[0px] text-[#391400] text-center hover:text-gray-400 uppercase shadow-md w-[140px] md:w-[170px] h-12">Discover All</button>
+
+                    <button className="font-['Epilogue'] font-extrabold text-[12px] md:text-[16px] leading-[100%] tracking-[0px] mt-24 text-[#391400] text-center hover:bg-[#FF6A00] uppercase rounded-md shadow-md w-[140px] md:w-[170px] h-12">Discover All</button>
                 </div>
             </div>
+
+            {/* blog row container (column on mobile) */}
             <div className="w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
+
                 {blogs.map((blog) => (
                     <div key={blog.id} className="w-full md:w-[370px] flex flex-col items-start gap-4 md:gap-6">
                         <img src={blog.image} alt="blog image" className="w-full h-auto rounded-lg" />

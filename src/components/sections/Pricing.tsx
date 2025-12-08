@@ -41,7 +41,7 @@ const plans: Plans[] = [
 
 const PricingDataBlock = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center gap-16 md:gap-24 bg-white py-16 md:py-20 px-4 md:px-12">
+    <section className="w-full flex flex-col items-center justify-center gap-16 md:gap-24 bg-white py-16 md:py-0 px-4 md:px-12">
       {/* Section heading */}
       <div className="text-center">
         <h5 className="font-['Epilogue'] text-[16px] tracking-[3px] uppercase text-[#EF6D58] mb-2">
@@ -61,7 +61,7 @@ const PricingDataBlock = () => {
             // individual pricing cards
             <div
               key={plan.id}
-              className={`h-[512px] border border-[#F3D1BF] rounded-md p-6 flex flex-col w-full md:max-w-xs 
+              className={`h-[512px] border border-[#F3D1BF] rounded-md p-6 flex flex-col w-full md:max-w-[390px] 
                 ${isPopular ? "w-[391px] h-[560px] pt-8 md:mt-[-45px] mx-px border-[#F3D1BF] border-r border-l rounded-tl-md rounded-tr-md rounded-br-none rounded-bl-none gap-4" : "bg-white gap-8"}
                 ${plan.id === 1 ? "md:border-r-0 rounded-tr-none rounded-br-none": plan.id === plans.length ? "md:border-l-0" : "md:border-x"}
               `}
@@ -104,13 +104,15 @@ const PricingDataBlock = () => {
               </div>
 
               {/* Button */}
-              <button
-                className={`mt-6 w-[154px] h-12 py-3 uppercase font-['Epilogue'] font-semibold rounded-md transition 
-                  ${isPopular ? "bg-[#EF6D58] text-white mt-11 hover:bg-[#d65c48]" : "bg-white text-[#391400] shadow-md hover:bg-gray-100"}
-                `}
-              >
-                {plan.buttonText}
-              </button>
+              <a href="#contact">
+                <button
+                  className={`mt-6 w-[154px] h-12 py-3 uppercase font-['Epilogue'] font-semibold rounded-md transition 
+                    ${isPopular ? "bg-[#EF6D58] text-white mt-17 hover:bg-[#FF6A00]" : "bg-white text-[#391400] shadow-md hover:bg-[#FF6A00]"}
+                  `}
+                >
+                  {plan.buttonText}
+                </button>
+              </a>
             </div>
           );
         })}
