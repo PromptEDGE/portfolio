@@ -128,8 +128,9 @@ const TestimonialBlockData = () => {
                         uppercase font-black text-[14px] text-[#391400] text-center mx-auto leading-[100%] tracking-[0px]
                         bg-white border border-[#F3D1BF]
                         rounded-xl shadow-sm px-4 py-3 mt-2
-                        active:scale-[0.97] active:bg-[#fcefe9]
+                        active:scale-[0.97]
                         transition-all duration-150
+                        hover:bg-[#FF6A00]
                     "
                 >
                     {showAll ? "See less" : "See all"}

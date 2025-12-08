@@ -5,8 +5,8 @@ import XIcon from '../../assets/footer/x-icon.svg';
 
 const FooterDataBlock = () => {
     return (
-        /// footer column section container
-        <section className="flex flex-col justify-center items-center pb-8 md:pb-[60px] px-[38px] md:mx-[135px]">
+        /// footer column section column container
+        <section className="flex flex-col justify-center items-center pb-8 md:pb-[60px] px-[38px] md:px-[85px]">
 
             {/* agency links row container */}
             <div className="flex flex-row justify-between items-start gap-6 md:gap-24 w-full">
@@ -91,7 +91,7 @@ const FooterDataBlock = () => {
             <hr className="w-full md:w-full md:mx-[135px] mx-[38px] h-px border-0 mt-6 md:mt-20 bg-[#F3D1BF]" />
 
             {/* copyright texts row container */}
-            <div className="flex flex-row justify-between md:justify-evenly items-center gap-2 md:gap-62 mt-4 md:mt-20 w-full">
+            <div className="flex flex-row justify-between md:justify-evenly items-center gap-2 md:gap-75 mt-4 md:mt-20 mx-[38px] md:mx-[85px] w-full">
 
                 <a>
                     <p className="flex justify-start items-center font-['Epilogue'] font-normal text-[9px] md:text-[16px] leading-4 md:leading-8 tracking-[0px] text-[#391400A3] whitespace-nowrap">Copyright © 2022 Laaqiq. All Rights Reserved.</p>

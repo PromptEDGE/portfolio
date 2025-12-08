@@ -7,16 +7,16 @@ import MarketingIcon from '../../assets/service/marketing-icon.svg';
 
 const OurService = () => {
     return (
-        // service row container
+        // service row container -image + right text
         <div className="flex flex-col md:flex-row justify-center md:justify-start items-center md:gap-4 mx-[38px] md:mx-[135px] my-[100px] md:w-full mt-[100px]">
 
-            {/* service pic */}
-            <div className="md:flex hidden flex-row justify-start items-center">
+            {/* left: service pic */}
+            <div className="md:flex hidden flex-row items-center">
                 <img src={ServicePic} alt="Service Picture" />
             </div>
 
             {/* right side text */}
-            <div className="flex flex-col items-center md:items-start justify-start gap-4 md:gap-8 md:mt-[-50px] w-auto mx-[38px] md:mx-0">
+            <div className="flex flex-col items-center md:items-start justify-end gap-4 md:gap-8 md:mt-[-50px] w-auto mx-[38px] md:mx-0">
 
                 <h2 className="w-[78px] h-8 font-['Epilogue'] font-normal text-[16px] leading-8 tracking-[0px] uppercase text-[#EF6D58]">service</h2>
 
@@ -26,8 +26,9 @@ const OurService = () => {
 
                 {/* image + quote row container */}
                 <div className="flex justify-center md:justify-start items-center gap-4">
+
                     {/* image */}
-                    <div className="flex justify-start items-start pb-2">
+                    <div className="flex justify-start items-start pb-6">
                         <img src={ServiceSmallPic} alt="Service Small Picture" className="w-16 h-16" />
                     </div>
 
@@ -42,7 +43,8 @@ const OurService = () => {
                     </div>
                 </div>
 
-                <button className="bg-white w-[138px] h-12 text-[14px] leading-[100%] font-['Epilogue'] font-extrabold uppercase text-[#391400] text-center shadow-[1px_1px_1px_1px_rgba(0,0,1,0.3)] rounded-md hover:translate-x-[-3px] hover:translate-y-[-3px]">explore</button>
+                {/* explore button */}
+                <button className="bg-white w-[138px] h-12 text-[14px] leading-[100%] font-['Epilogue'] font-extrabold uppercase text-[#391400] text-center shadow-[1px_1px_1px_1px_rgba(0,0,1,0.3)] outline-none rounded-md hover:bg-[#FF6A00]">explore</button>
             </div>
         </div>
     );
@@ -64,7 +66,7 @@ const MoreService = () => {
             <div className="flex md:flex-row flex-col justify-center items-center gap-4 md:gap-0">
 
                 {/* first item column container */}
-                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-md md:rounded-tr-none md:rounded-br-none w-[calc(100vw-76px)] md:w-[360px] h-[400px] px-4 md:px-0">
+                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-md md:rounded-tr-none md:rounded-br-none md:w-[360px] h-[400px] px-4 md:px-0">
 
                     <div className="relative top-10 left-10">
 
@@ -81,7 +83,7 @@ const MoreService = () => {
                 </div>
 
                 {/* second item column container */}
-                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] md:border-x-0 rounded-md md:rounded-none w-[calc(100vw-76px)] md:w-[360px] h-[400px] px-4 md:px-0">
+                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] md:border-x-0 rounded-md md:rounded-none w-auto md:w-[360px] h-[400px] px-4 md:px-0">
 
                     {/* relative image container */}
                     <div className="relative top-10 left-10">
@@ -99,7 +101,7 @@ const MoreService = () => {
                 </div>
 
                 {/* third item column container */}
-                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-md md:rounded-tl-none md:rounded-bl-none w-[calc(100vw-76px)] md:w-[360px] h-[400px] px-4 md:px-0">
+                <div className="flex flex-col items-start justify-start gap-8 border border-solid border-[#F3D1BF] rounded-md md:rounded-tl-none md:rounded-bl-none md:w-[360px] h-[400px] px-4 md:px-0">
 
                     {/* relative image container */}
                     <div className="relative top-10 left-10">
@@ -123,7 +125,7 @@ const MoreService = () => {
 
 const Service = () => {
 return (
-    <section id="service" className="bg-white w-full overflow-hidden flex flex-col py-16 md:py-20">
+    <section id="service" className="bg-white w-full flex flex-col py-16 md:py-20">
         <OurService />
         <MoreService />
     </section>
