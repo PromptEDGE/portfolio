@@ -33,13 +33,25 @@ const FAQDataBlock = () => {
     }
 
     return (
-        <section className="flex flex-col md:flex-row items-center md:items-center justify-center px-[38px] md:px-[135px] py-16 md:py-20 gap-8 md:gap-12">
+        // section row container (column on mobile)
+        <section className="flex flex-col md:flex-row items-center md:items-center justify-center mx-[38px] md:mx-[135px] py-16 md:py-0 gap-8 md:gap-28">
+
+            {/* HEADINGS COLUMN CONTAINER */}
             <div className="flex flex-col gap-6 md:gap-8 w-full md:w-auto justify-center md:justify-start items-center md:items-start">
+
                 <h5 className="font-['Epilogue'] font-normal leading-8 tracking-[3px] uppercase text-[#EF6D58]">Faq</h5>
-                <h3 className="max-w-full md:w-[371px] font-['Epilogue'] font-extrabold text-[28px] md:text-[40px] leading-tight md:leading-12 tracking-0 text-[#391400]">Frequently Asked Questions</h3>
+
+                <h3 className="max-w-full md:w-[371px] font-['Epilogue'] font-extrabold text-[28px] md:text-[40px] leading-tight md:leading-12 tracking-0 text-[#391400] text-center md:text-left">Frequently Asked Questions</h3>
+
                 <p className="max-w-full md:w-[470px] font-['Epilogue'] font-normal text-[14px] md:text-[16px] leading-7 md:leading-8 tracking-0 text-[#391400]">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
-                <button className="w-[110px] h-8 font-['Epilogue'] font-normal text-[16px] leading-8 tracking-0 text-[#391400] shadow-md hover:bg-gray-100 rounded-md px-2">Contact Us</button>
+
+                {/* contact us button */}
+                <a href="#contact">
+                    <button className="w-[110px] h-10 font-['Epilogue'] font-extrabold text-[12px] leading-8 tracking-0 text-[#391400] shadow-md    hover:bg-[#FF6A00] rounded-md px-2 pt-2 uppercase">Contact Us</button>
+                </a>
             </div>
+
+            {/* FAQ Column Content */}
             <div className="flex flex-col justify-center items-end gap-0 mt-5 md:pt-75 w-full md:w-auto">
                 {faqItems.map((item, index) => {
                     const isLast = index === faqItems.length - 1

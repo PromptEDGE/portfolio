@@ -35,6 +35,7 @@ const LatestWork = () => {
   return (
     // heading + work array column container
     <div className="flex flex-col items-center gap-6 w-full">
+
       <h2 className="text-[16px] uppercase tracking-[3px] text-[#EF6D58] font-medium text-center">
         Portfolio
       </h2>
@@ -116,7 +117,7 @@ const LatestWork = () => {
 
       {/* explore more button */}
       <div className="flex justify-center mt-10">
-        <button className="px-6 py-3 rounded-0.5 text-white transition font-['Epilogue'] font-black text-[14px] leading-[100%] tracking-[0px] text-center uppercase hover:bg-gray-600 border border-gray-600">
+        <button className="px-6 py-3 text-white transition font-['Epilogue'] font-black text-[14px] leading-[100%] tracking-[0px] text-center uppercase hover:bg-[#FF6A00] border rounded-md  border-gray-600">
           Explore More
         </button>
       </div>

@@ -38,7 +38,7 @@ const AboutMe = () => {
 const MoreAboutMe = () => {
     return (
         // more about me table row container
-        <div className="flex items-center gap-0 md:h-[744px] h-auto mx-[38px] md:mx-[135px] my-12 md:my-0"> 
+        <div className="flex items-center gap-0 md:h-[744px] h-auto mx-[38px] md:mx-[135px] md:my-0"> 
 
             {/* first item column container */}
             <div className="flex flex-col items-center md:items-center gap-4 md:w-[800px] h-[280px] md:h-[744px] flex-1 border border-[#1F2030] border-solid rounded-tl-md rounded-bl-md pt-[60px] pb-[60px]">
@@ -120,7 +120,7 @@ const About = () => {
             <div className="mt-12 md:mt-0">
                 <MoreAboutMe />
             </div>
-            <div className="md:w-[1425px] h-px bg-[#F3D1BF] md:mx-auto mx-[38px] mt-[75px] md:mt-[100px]"></div>
+            <div className="h-px bg-[#F3D1BF] md:mx-[135px] mx-[38px] mt-[75px] md:mt-[100px]"></div>
             <VideoReel />
         </section>
     );
